@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="sorttable.js"></script>
+
+<script>
+$(function(){
+	$("#dest").addSortWidget();
+});
+</script>
+
+<title>Sample</title>
+</head>
+<body>
+
+<table border="1" cellspacing="0" cellpadding="5" style="border-collapse: collapse;" id="dest">
+    <thead>
+        <tr>
+            <th>Header 1</th><th>Header 2</th><th>Header 3</th><th>Header 4</th><th>Header 5</th>
+        </tr>
+    </thead>
+    
+    <tbody>
+        <tr>
+            <td>1</td><td>Some text</td><td>2016-03-15</td><td>546</td><td>7.6</td>
+        </tr>
+        <tr>
+            <td>2</td><td>Spam</td><td>2015-12-18</td><td>45</td><td>8.6</td>
+        </tr>
+        <tr>
+            <td>3</td><td>Foo</td><td>2001-05-01</td><td>57</td><td>5.1</td>
+        </tr>
+        <tr>
+            <td>4</td><td>In the kingdom far far away</td><td>1925-10-29</td><td>1</td><td>9.1</td>
+        </tr>
+        <tr>
+            <td>5</td><td>Eggs</td><td>2016-04-01</td><td>456</td><td>8.8</td>
+        </tr>
+        <tr>
+            <td>6</td><td>Useless text</td><td>2017-01-31</td><td>424</td><td>no rating</td>
+        </tr>
+        <tr>
+            <td>7</td><td>Text text text</td><td>2000-07-20</td><td>12324</td><td>no rating</td>
+        </tr>
+        <tr>
+            <td>8</td><td>Bob Dylan</td><td>2016-03-14</td><td>51123</td><td>1.5</td>
+        </tr>
+    </tbody>
+
+</table>
+
+</body>
+</html>
