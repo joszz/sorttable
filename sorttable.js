@@ -35,6 +35,12 @@ jQuery.fn.addSortWidget = function(options){
                     // sort array with table rows
                     var m = $("td:eq(" + index + ")", a).text(); // get column you needed by using index of th element (closure)
                     var n = $("td:eq(" + index + ")", b).text();
+                    
+                    // if elements are numbers
+                    if (!isNaN(m) && !isNaN(n))     
+                        return (is_asc) ? (m - n) : (n - m);
+                    
+                    // if elements are strings
                     if (is_asc)
                         return m.localeCompare(n); // asc
                     else
